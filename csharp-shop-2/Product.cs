@@ -44,16 +44,16 @@ namespace csharp_shop_2
 			}
 		}
 
-		private float price;
+		private float Price;
 		public float Price
 		{
 			get
 			{
-				return this.price;
+				return this.Price;
 			}
 			set
 			{
-				this.price = value;
+				this.Price = value;
 			}
 		}
 
@@ -85,7 +85,7 @@ namespace csharp_shop_2
 			this.name = name;
 			this.description = description;
 			this.code = getCodePadLeft8();
-			this.price = price;
+			this.Price = price;
 			this.tax = tax;
 			this.category = new Category(categoryName);
 		}
@@ -139,7 +139,7 @@ namespace csharp_shop_2
 			$"Nome: {this.name} \n" +
 			$"Descrizione: {this.description} \n" +
 			$"Codice: {this.code} \n" +
-			$"Prezzo: {this.price} \n" +
+			$"Prezzo: {this.Price} \n" +
 			$"Categoria: \n" +
 			$"{category.getCategoryInfo()}";
 

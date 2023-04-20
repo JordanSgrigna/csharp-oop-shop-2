@@ -16,7 +16,7 @@ namespace csharp_shop_2
 		private string source;
 
 		//CONSTRUCTOR
-		public Water(string name, string brand, int maxCapacity, float pH, string source) : base(name)
+		public Water(string name, string brand, int maxCapacity, float pH, string source) : base(name, Description, Price)
 		{
 			this.brand = brand;
 			this.maxCapacity = maxCapacity;
