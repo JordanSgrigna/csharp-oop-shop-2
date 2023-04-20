@@ -9,7 +9,7 @@ namespace csharp_shop_2
 	public class Product
 	{
 		//ATTRIBUTES + PROPERTIES
-		private string code;
+		private protected string code;
 		public string Code
 		{
 			get
@@ -44,16 +44,16 @@ namespace csharp_shop_2
 			}
 		}
 
-		private float Price;
+		private float price;
 		public float Price
 		{
 			get
 			{
-				return this.Price;
+				return this.price;
 			}
 			set
 			{
-				this.Price = value;
+				this.price = value;
 			}
 		}
 
@@ -69,7 +69,7 @@ namespace csharp_shop_2
 				this.tax = value;
 			}
 		}
-		private Category category;
+		private protected Category category;
 		public Category Category
 		{
 			get
@@ -133,7 +133,7 @@ namespace csharp_shop_2
 
 		}
 
-		public string getProductInfo()
+		public virtual string getProductInfo()
 		{
 			string infoProduct =
 			$"Nome: {this.name} \n" +
